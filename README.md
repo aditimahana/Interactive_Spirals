@@ -2,74 +2,56 @@
 
 ## 📖 Introduction
 
-This repository contains two creative Python Turtle graphics exercises from Section 3 of *Teach Your Kids to Code*.
+This repository contains four interactive Python Turtle graphics projects from Section 3 of *Teach Your Kids to Code* by Bryson Payne.
 
-The programs explore how user input can be combined with loops, mathematical expressions, and Turtle graphics to generate personalised visual designs.
+The programs explore how user input, loops, mathematical expressions, and colour palettes can be combined to create personalised geometric patterns and text-based spiral animations.
 
-One program allows users to customise a geometric spiral by selecting its number of sides, while the other transforms the user's name into a colourful spiral animation.
+Users can customise their designs by selecting the number of sides or entering their names, producing different visual effects.
 
 ## 📂 Programs
 
-### 1. ColorSpiralInput.py
+| File | Description |
+|---|---|
+| `ColorSpiralInput.py` | Generates a colourful geometric spiral based on the number of sides selected by the user. |
+| `SpiralMyName.py` | Creates a colourful spiral displaying the user's name repeatedly in gradually increasing font sizes. |
+| `ColorMeSpiralled.py` | Creates a personalised text spiral using the user's name, a ten-colour palette, and a user-selected number of sides between 1 and 10. |
+| `CircleSpiralInput.py` | Generates a colourful circular spiral using a user-selected number of sides, with gradually increasing pen width. |
 
-An interactive geometric spiral generator that allows users to choose the number of sides for their design.
+## 🎨 What They Should Look Like
 
-**What it does:**
-- Opens a black Turtle graphics window.
-- Displays a numerical input prompt asking the user to choose between 1 and 8 sides.
-- Generates a colourful spiral based on the selected number.
-- Alternates between eight different colours.
-- Gradually increases the pen width as the spiral develops.
-
-**What it should look like:**
-
-A colourful geometric spiral drawn against a black background. The pattern changes depending on the number of sides selected, creating different polygon-inspired shapes.
-
-### 2. SpiralMyName.py
-
-A personalised Turtle graphics animation that writes the user's name repeatedly in a spiral formation.
-
-**What it does:**
-- Opens a black Turtle graphics window.
-- Asks the user to enter their name through a pop-up input window.
-- Writes the name 100 times around a spiral.
-- Alternates between four different pen colours.
-- Gradually increases the font size.
-- Changes the Turtle's position and direction after each repetition.
-
-**What it should look like:**
-
-A colourful spiral made up of repeated instances of the user's name. Each repetition appears further along the spiral, with the text gradually increasing in size.
+- **ColorSpiralInput:** A colourful geometric spiral against a black background, with its pattern determined by the selected number of sides.
+- **SpiralMyName:** A spiral made up of repeated instances of the user's name, gradually increasing in size and alternating between four colours.
+- **ColorMeSpiralled:** A personalised text spiral displaying the user's name repeatedly in up to ten alternating colours, with its rotation determined by the selected number of sides.
+- **CircleSpiralInput:** A colourful circular spiral made of increasingly large circles, with alternating colours and gradually increasing line thickness. Its rotation angle is determined by the user's selected number of sides.
 
 ## 🛠️ What I Learned
 
-- **Turtle graphics:** Creating visual patterns using Python's Turtle module.
+- **Python Turtle Graphics:** Creating geometric patterns and visual animations using the Turtle module.
 - **User input:** Using `turtle.numinput()` and `turtle.textinput()` to collect information through pop-up windows.
-- **For loops:** Repeating drawing and writing instructions.
-- **Lists:** Storing multiple colours and accessing them by index.
-- **Modulo operator:** Using `%` to cycle through colours.
-- **Mathematical expressions:** Calculating movement distances, rotation angles, and font sizes.
+- **For loops:** Repeating drawing and writing instructions using `range()`.
+- **Variables:** Storing user input, colours, and mathematical values.
+- **Lists and indexing:** Storing and accessing different colours.
+- **Modulo operator (`%`):** Cycling through colour palettes using list indexing.
+- **Mathematical expressions:** Calculating rotation angles, movement distances, circle sizes, and font sizes.
 - **Pen controls:** Using `penup()` and `pendown()` to control when the Turtle draws.
-- **Customisation:** Changing background colours, pen colours, and font properties.
+- **Turtle movement:** Using `forward()`, `circle()`, and `left()` to generate different patterns.
+- **Dynamic line widths:** Gradually increasing pen thickness using `width()`.
+- **Customisation:** Changing background colours, pen colours, line widths, and text properties.
 
 ## 🚀 How to Run
 
-1. Install Python.
+1. Make sure Python is installed.
 2. Clone or download this repository.
 3. Open the project folder in your Python IDE.
-4. Run either program:
+4. Run any of the four Python files.
+
+For example:
 
 ```bash
-python ColorSpiralInput.py
+python CircleSpiralInput.py
 ```
 
-Or:
-
-```bash
-python SpiralMyName.py
-```
-
-Follow the pop-up prompts to customise your spiral or enter your name.
+Follow the pop-up prompts to enter your name or select the number of sides for your design.
 
 ## 📚 Credits
 
@@ -80,6 +62,7 @@ The programs were completed as part of my Python learning journey.
 ---
 
 **Course:** *Teach Your Kids to Code*  
+**Author:** Bryson Payne  
 **Section:** 3  
 **Language:** Python  
 **Module:** Turtle Graphics
